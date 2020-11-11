@@ -56,7 +56,7 @@ const options = {
       assertEndpoint: process.env.CORPPASS_ASSERT_ENDPOINT,
     },
   },
-  showLoginPage: process.env.SHOW_LOGIN_PAGE === 'true',
+  showLoginPage: process.env.SHOW_LOGIN_PAGE || 'true',
   encryptMyInfo: process.env.ENCRYPT_MYINFO === 'true',
   cryptoConfig,
 }
